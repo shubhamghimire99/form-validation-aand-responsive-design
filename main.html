@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action=""  >
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    
+                </div>
+                <span id="fnameError" class="error"></span>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+                <span id="lnameError" class="error"></span>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">E-Mail</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="email" name="email" placeholder="Your E-Mail..">
+                </div>
+                <span id="emailError" class="error"></span>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="phone">Phone Number</label>
+                </div>
+                <div class="col-75">
+                    <input type="tel" id="phone" name="phone" placeholder="Your phone number..">
+                </div>
+                <span id="phoneError" class="error"></span>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="password">Password</label>
+                </div>
+                <div class="col-75">
+                    <input type="password" id="password" name="password" placeholder="Your password..">
+                </div>
+               <span id="passwordError" class="error"></span>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="password">Confirm Password</label>
+                </div>
+                <div class="col-75">
+                    <input type="password" id="cpassword" name="password" placeholder="Confirm password..">
+                </div>
+                <span id="cpasswordError" class="error"></span>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Country</label>
+                </div>
+                <div class="col-75">
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+                <span id="countryError" class="error"></span>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit" onclick="validateForm(event)">
+            </div>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
